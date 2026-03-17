@@ -13,7 +13,7 @@ def montyhall(num):
     car = random.randint(0,num-1)
     doors[car] = True
     # Inzio del gioco
-    n = int(input(f"PROBLEMA DI MONTIHALL!\nScegli un numero tra 1 e {num}: "))
+    n = int(input(f"PROBLEMA DI MONTY-HALL!\nScegli un numero tra 1 e {num}: "))
     if doors[n-1]==False:
         if num == 3:
             print("Ok, adesso aprirò una porta in cui so che c'è una capra...")
@@ -68,4 +68,22 @@ def montyhall(num):
             else:
                 print("Devi scegliere un numero tra 0 e 1")
 
-montyhall(3)
+
+while True:
+    try:
+        n = int(input("PROBLEMA DI MONTY-HALL!\nCi saranno varie porte, in una di queste c'è un'auto e nelle altre delle capre. Tu dovrai trovare l'auto.\nInnanzitutto, con quante porte vuoi giocare? (devono essere minimo 3)\n"))
+        montyhall(n)
+        d = int(input("Vuoi giocare ancora? (0 per NO, 1 per SI)\n"))
+        if d == 0:
+            print("Grazie per aver giocato!")
+            exit()
+        if d!=0 and d!=1:
+            raise TypeError("Devi scegliere un numero tra 0 e 1")
+    except:
+        print("C'è stato un errore!")
+        d = int(input("Vuoi giocare ancora? (0 per NO, 1 per SI)\n"))
+        if d == 0:
+            print("Grazie per aver giocato!")
+            exit()
+        if d!=0 and d!=1:
+            raise TypeError("Devi scegliere un numero tra 0 e 1")
