@@ -4,8 +4,8 @@ Un simulatore in Python che permette di esplorare il Paradosso di Monty Hall con
 
 ### 🚀 Provalo Subito
 Testa il gioco direttamente nel tuo browser:
-* [**Online Python**](https://www.online-python.com/BsVXJqrxbz)
-* [**Programiz**](https://www.programiz.com/online-compiler/4fAHAokdQyJQz)
+* [**Online Python**](https://www.online-python.com/d0QYAcaJBP)
+* [**Programiz**](https://www.programiz.com/online-compiler/81ZaBBS5oRCQS)
 
 ---
 
